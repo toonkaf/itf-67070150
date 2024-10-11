@@ -1,0 +1,60 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+.profile{
+    height: 300px;
+    width: 300px;
+    background-image: url(https://pm1.narvii.com/6513/42d82cea890387fe7075ea37cd2b487f8f7398ab_hq.jpg);
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.notify{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+}
+
+.head{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.table-tel{
+    margin-top: 25px;
+    border-spacing: 0;
+}
+
+.table-tel th {
+    font-size: medium;
+    width: 250px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    background-color: lightgrey;
+    border-bottom: 1px solid rgb(101, 101, 101);
+    padding: 0;
+    padding-left: 15px;
+    text-align: left;
+}
+.tel-table td {
+    font-size: medium;
+    box-sizing: border-box;
+    width: 250px;
+    height: 40px;
+    color: rgb(101, 101, 101);
+    background-color: white;
+    padding: 0 15px;
+    border-bottom: 1px solid lightgray;
+}

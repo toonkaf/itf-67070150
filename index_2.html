@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITF-Web Pro2</title>
+    <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+    <h1 id="user" class="head">""'s Phone Book</h1>
+    <center><div class="profile" id = "profile">
+        <div class="notify"><p>1</p></div>
+    </div>
+</center>
+    <div class="container">
+    <center><h1> </h1>
+    <label class="head">Set username :</label><input type="text" id="name"> <button class="head" onclick="setName()">set</button>
+    <h2></h2>
+    <label class="head">Set profile :</label><input type="url" id="image"> <button class="head" onclick="setProfile()">set</button>
+    <h2 class="head">Add Phone Number List</h2>
+    <label class="head">Name : </label><input type="text" id="names"><label class="head"> Tel : </label><input type="text" id="names"> <button class="head" onclick="addParagraph">set</button>  <button class="head" onclick="addParagraph">export</button>
+    <table class="table-tel" id="table">
+        <tbody>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Tel.</th>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</center>
+    <script>
+        let count = 0
+        const username = document.getElementById("user");
+        const input = document.getElementById("name");
+        const input_2 = document.getElementById("image");
+        const newdiv = document.getElementsByClassName("container")[0];
+        function setName(){
+            username.textContent = input.value + "'s Phone Book";
+        }
+        function setProfile(){
+            profile.style.backgroundImage = "url(" + input_2.value +")";
+        }
+        function addParagraph(){
+            count += 1
+            const row = document.createElement("tr")
+            const cellNo = document.createElement("td")
+            const cellName = document.createElement("td")
+            const cellTel = document.createElement("td")
+            cellNo.textContent = count
+            cellName.textContent = document.getElementById("")
+
+       }
+    </script>
+</body>
+</html>
